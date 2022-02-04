@@ -1,0 +1,69 @@
+:root{
+  --main-color:#2f3136;
+  --black:#202225;
+  --bg:#395563;
+  --border: .1rem solid rgba(255,255,255,.3);
+}
+/* Html Tag */
+*{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background: #fff;
+  border-radius: 5rem;
+}
+body{
+  background: var(--bg);
+}
+/* ID Tag */
+/* Class Tag */
+.header{
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 10;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header .logo img{
+  height: 6rem;
+}
+
+.header .navbar a{
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.header .navbar a:hover{
+  color: var(--main-color);
+  border-bottom: .1rem solid var(--main-color);
+  padding-bottom: .5rem;
+}
